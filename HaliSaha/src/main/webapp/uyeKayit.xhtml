@@ -6,10 +6,44 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
 	template="/resources/masterPage.xhtml">
-	<ui:param name="pageTitle" value="Ana Sayfa"></ui:param>
+	<ui:param name="pageTitle" value="Uye Kayıt"></ui:param>
 	<ui:define name="content">
 		<div id="mainCol" class="clearfix">
-		
+			<table align="center" style="margin-top: 100px">
+				<tr>
+					<td><h:outputText value="Kullanıcı Adi"></h:outputText></td>
+					<td><h:inputText value="#{uyeKayitBean.adi}"
+							validatorMessage="Boş bırakılamaz">
+							<f:validateLength maximum="12"></f:validateLength>
+						</h:inputText></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Soyadiniz :"></h:outputText></td>
+					<td><h:inputText value="#{uyeKayitBean.soyAdi}" /></td>
+				</tr>
+
+				<tr>
+					<td><h:outputText value="Telefon Numarası :"></h:outputText></td>
+					<td><h:inputText value="#{uyeKayitBean.telNo}" /></td>
+				</tr>
+
+				<tr>
+					<td><h:outputText value="Parola"></h:outputText></td>
+					<td><h:inputSecret value="#{uyeKayitBean.parola}"></h:inputSecret></td>
+				</tr>
+
+				<tr>
+					<td><h:outputText value="Mail"></h:outputText></td>
+					<td><h:inputText value="#{uyeKayitBean.mail}" id="stringa">
+						</h:inputText></td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td align="right">
+					<h:commandButton value="Kayıt" 	action="#{uyeKayitBean.uyeKayit()}"></h:commandButton></td>
+				</tr>
+			</table>
 		</div>
 
 	</ui:define>

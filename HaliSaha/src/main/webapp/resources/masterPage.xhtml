@@ -16,7 +16,7 @@
 
 	<div id="header">
 		<h:outputLink value="/HaliSaha/anaSayfa.xhtml">
-				<h:graphicImage value="resources/images/logo.png"  title="Affiliate Promo logo" id="logo"
+				<h:graphicImage value="resources/images/logo1.png"  title="Affiliate Promo logo" id="logo"
 				alt="Logo"/>
 		</h:outputLink>
 		<ul id="navBar">
@@ -55,13 +55,13 @@
 								<h:selectBooleanCheckbox value="Beni Hatirla" id="remember"
 									name="remember" />
 								<h:outputLabel for="remember">Beni Hatirla</h:outputLabel>
-								<h:commandButton value="    Giriş     " type="submit" action="#{user.goLoginPage}" />
+								<h:commandButton value="    Giriş     " type="submit"/>
 							</p>
 						</form>
 						<p class="member">
 							<h:outputLink value="/remember">Parolayı Hatırlamıyorum..</h:outputLink>
 							<br />Henüz Üye Değilimisiniz?
-							<h:outputLink value="/uyeGiris">Şimdi Kaydol!</h:outputLink>
+							<h:outputLink value="/HaliSaha/uyeKayit.xhtml">Şimdi Kaydol!</h:outputLink>
 						</p>
 					</fieldset>
 					<h3 id="news">Son Haberler !</h3>
@@ -100,7 +100,7 @@
 		<ul>
 			<li> <h:outputLink value="/HaliSaha/anaSayfa.xhtml">Ana Sayfa</h:outputLink>&nbsp;&nbsp;-&nbsp;&nbsp;</li>
 			<li> <h:outputLink value="/HaliSaha/terminoloji.xhtml">Terminoloji</h:outputLink>&nbsp;&nbsp;-&nbsp;&nbsp;</li>
-			<li> <h:outputLink value="/HaliSaha/guvenlik.xhtml">Kişise Güvenlik</h:outputLink>&nbsp;&nbsp;-&nbsp;&nbsp;</li>
+			<li> <h:outputLink value="/HaliSaha/guvenlik.xhtml">Kişisel Güvenlik</h:outputLink>&nbsp;&nbsp;-&nbsp;&nbsp;</li>
 			<li> <h:outputLink value="/HaliSaha/sitemap.xhtml">Site Haritası</h:outputLink>&nbsp;&nbsp;-&nbsp;&nbsp;</li>
 			<li> <h:outputLink value="/HaliSaha/destek.xhtml">Destek</h:outputLink>&nbsp;&nbsp;-&nbsp;&nbsp;</li>
 			<li> <h:outputLink value="/HaliSaha/iletisim.xhtml">İletişim</h:outputLink></li>
