@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<title>${pageTitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<h:outputStylesheet name="css/masterPage.css" />
+</h:head>
+
+<h:body>
+
+	<div id="header">
+		<h:outputLink value="/HaliSaha/anaSayfa.xhtml">
+				<h:graphicImage value="resources/images/logo.png"  title="Affiliate Promo logo" id="logo"
+				alt="Logo"/>
+		</h:outputLink>
+		<ul id="navBar">
+			<li class="current"><h:outputLink value="/HaliSaha/anaSayfa.xhtml">AnaSayfa</h:outputLink></li>
+			<li><h:outputLink value="/HaliSaha/servisler.xhtml">Servisler</h:outputLink></li>
+			<li><h:outputLink value="/HaliSaha/islemeler.xhtml">İşlemler</h:outputLink></li>
+			<li><h:outputLink value="/HaliSaha/hakkinda.xhtml">Hakkında</h:outputLink></li>
+			<li><h:outputLink value="/HaliSaha/iletisim.xhtml">İletişim</h:outputLink></li>
+		</ul>
+	</div>
+	<div id="welcomeMessage">
+		<h1>Vektorel Halı Saha Uygulamasına Hoş Geldiniz..</h1>
+		<p>vektorelhalisaha.com</p>
+	</div>
+	<div id="wrapper">
+		<div id="secWrapper">
+			<div id="container" class="clearfix">
+				<div id="mainCol" class="clearfix">
+					<ui:insert name="content">
+					</ui:insert>
+				</div>
+
+				<div id="secCol">
+					<fieldset id="login">
+						<h4>Üye Girişi</h4>
+						<form action="#">
+							<p class="clearfix">
+								<h:outputLabel for="username">Üye Adi</h:outputLabel>
+								<h:inputText name="username" id="username" type="text" value="" />
+							</p>
+							<p class="clearfix">
+								<h:outputLabel for="password">Parola</h:outputLabel>
+								<h:inputText name="password" id="password" type="text" value="" />
+							</p>
+							<p class="clearfix check">
+								<h:selectBooleanCheckbox value="Beni Hatirla" id="remember"
+									name="remember" />
+								<h:outputLabel for="remember">Beni Hatirla</h:outputLabel>
+								<h:commandButton value="    Giriş     " type="submit" action="#{user.goLoginPage}" />
+							</p>
+						</form>
+						<p class="member">
+							<h:outputLink value="/remember">Parolayı Hatırlamıyorum..</h:outputLink>
+							<br />Henüz Üye Değilimisiniz?
+							<h:outputLink value="/uyeGiris">Şimdi Kaydol!</h:outputLink>
+						</p>
+					</fieldset>
+					<h3 id="news">Son Haberler !</h3>
+					<ul>
+						<li class="clearfix">
+							<h4>
+								<a href="#">Halı Saha Turnuvası Başladı..</a>
+							</h4> <span>20 Haziran, 2015</span>
+							<p>Vektorel Halı Sahanın düzenlemiş olduğu hali saha turnuvası dün itibariyle başladı.
+							kura ile eşleştirilen takımlar yarın itibariyle müsabakalara başlaycak..
+							</p> <h:outputLink class="more">Devamı..</h:outputLink>
+						</li>
+						<li class="clearfix">
+							<h4>
+								<a href="#">İlk Karşılaşmalar Gerçekleşti..</a>
+							</h4> <span>21 Haizran, 2015</span>
+							<p>Takımlara ait sonuçlar puan durumu ve grup dağılımları şekilenmeye başladı.</p>
+							 <h:outputLink class="more">Devamı..</h:outputLink>
+						</li>
+					</ul>
+					<h3 id="test">Gelecek Turnuvalar !</h3>
+					<ul>
+						<li class="clearfix">
+							<p>Gelecek dönemde düzenlenecek olan turnuvalara katılmak için takımını oluştur </p>
+							<p class="test">
+								<span>Hemen Katıl  :</span> <h:outputLink>Turnuva</h:outputLink>
+							</p>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<ul>
+			<li> <h:outputLink value="/HaliSaha/anaSayfa.xhtml">Ana Sayfa</h:outputLink>&nbsp;&nbsp;-&nbsp;&nbsp;</li>
+			<li> <h:outputLink value="/HaliSaha/terminoloji.xhtml">Terminoloji</h:outputLink>&nbsp;&nbsp;-&nbsp;&nbsp;</li>
+			<li> <h:outputLink value="/HaliSaha/guvenlik.xhtml">Kişise Güvenlik</h:outputLink>&nbsp;&nbsp;-&nbsp;&nbsp;</li>
+			<li> <h:outputLink value="/HaliSaha/sitemap.xhtml">Site Haritası</h:outputLink>&nbsp;&nbsp;-&nbsp;&nbsp;</li>
+			<li> <h:outputLink value="/HaliSaha/destek.xhtml">Destek</h:outputLink>&nbsp;&nbsp;-&nbsp;&nbsp;</li>
+			<li> <h:outputLink value="/HaliSaha/iletisim.xhtml">İletişim</h:outputLink></li>
+		</ul>
+		<p>Telif Hakları &copy; 2015 vektorelhalisaha.com, Tüm Hakları Saklıdır</p>
+	</div>
+</h:body>
+</html>
