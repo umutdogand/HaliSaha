@@ -1,12 +1,13 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.vektorel.src</groupId>
-  <artifactId>HaliSaha</artifactId>
-  <version>0.0.1</version>
-  <packaging>war</packaging>
-  <name>HaliSahaWeb</name>
-  <dependencies>
-  <dependency>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.vektorel.src</groupId>
+	<artifactId>HaliSaha</artifactId>
+	<version>0.0.1</version>
+	<packaging>war</packaging>
+	<name>HaliSahaWeb</name>
+	<dependencies>
+		<dependency>
 			<groupId>org.glassfish</groupId>
 			<artifactId>javax.faces</artifactId>
 			<version>2.2.2</version>
@@ -26,5 +27,6 @@
 			<artifactId>hibernate-core</artifactId>
 			<version>4.3.10.Final</version>
 		</dependency>
-  </dependencies>
+
+	</dependencies>
 </project>
