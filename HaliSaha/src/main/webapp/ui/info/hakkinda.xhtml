@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	template="/resources/masterPage.xhtml">
+	<ui:param name="pageTitle" value="Hakkında"></ui:param>
+	<ui:define name="content">
+		<div id="mainCol" class="clearfix">
+			<h3 id="why">Site Sahipleri ?</h3>
+			<ul id="maincon">
+				<li class="clearfix"><h:graphicImage
+						value="resources/images/imageBahattin.png" title="Bahattin"
+						id="imageBahattin" />
+
+					<h2>Bahattin Özgür</h2>
+					<p>Kişisel Bilgiler.....</p></li>
+				<li class="clearfix"><h:graphicImage
+						value="resources/images/imageUmut.png" title="Umut" id="imageUmut" />
+
+					<h2>Mahir Umut Dilek</h2>
+					<p>Kişisel Bilgiler.....</p></li>
+				<li class="clearfix"><h:graphicImage
+						value="resources/images/imageAdil.png" title="Adil" id="imageAdil" />
+
+					<h2>Adil Ince</h2>
+					<p>Kişisel Bilgiler.....</p></li>
+				<li class="clearfix last"><h:graphicImage
+						value="resources/images/imageNuri.png" title="Nuri" id="imageNuri" />
+					<h2>Nuri Toğçuoğlu</h2>
+					<p>Kişisel Bilgiler.....</p></li>
+			</ul>
+		</div>
+
+	</ui:define>
+</ui:composition>

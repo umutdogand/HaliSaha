@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	template="/resources/masterPage.xhtml">
+	<ui:param name="pageTitle" value="Servisler"></ui:param>
+	<ui:define name="content">
+		<div id="mainCol" class="clearfix">
+			<h:form>
+				<p:growl id="messages" showDetail="true" />
+				<h3 id="why">Servisler</h3>
+				<p:accordionPanel>
+					<p:tab title="Saha İşlemleri">
+						<h:panelGrid columns="2" cellpadding="10">
+							<p:graphicImage value="/resources/images/saha.png" />
+							<h:panelGrid columns="2" cellpadding="10">
+								<p:tieredMenu style="width:200px;">
+									<p:submenu label="Saha Ekleme" icon="ui-icon-refresh">
+										<p:menuitem value="Ekleme"
+											outcome="/ui/business/saha/sahaEkleme"
+											icon="ui-icon-tag" />
+									</p:submenu>
+									<p:submenu label="Saha İşlem" icon="ui-icon-newwin">
+										<p:menuitem value="Silme"
+											outcome="/ui/business/saha/sahaBilgi"
+											icon="ui-icon-trash" />
+										<p:menuitem value="Güncelleme"
+											outcome="/ui/business/saha/sahaBilgi"
+											icon="ui-icon-arrowrefresh-1-w" />
+										<p:menuitem value="Listeleme"
+											outcome="/ui/business/saha/sahaBilgi"
+											icon="ui-icon-document" />
+									</p:submenu>
+								</p:tieredMenu>
+							</h:panelGrid>
+						</h:panelGrid>
+					</p:tab>
+					<p:tab title="Takim İşlemleri">
+						<h:panelGrid columns="2" cellpadding="10">
+							<p:graphicImage value="/resources/images/top1.png" />
+							<h:outputText value="The story begins as Don Vito Corleone..." />
+						</h:panelGrid>
+					</p:tab>
+					<p:tab title="Futbolcu İşlemleri">
+						<h:panelGrid columns="2" cellpadding="10">
+							<p:graphicImage value="/resources/images/futbolcu.png" />
+							<h:outputText value="Francis Ford Coppola's legendary..." />
+						</h:panelGrid>
+					</p:tab>
+					<p:tab title="Turnuva İşlemleri">
+						<h:panelGrid columns="2" cellpadding="10">
+							<p:graphicImage value="/resources/images/cim16.png" />
+							<h:outputText value="After a break of more than 15 years..." />
+						</h:panelGrid>
+					</p:tab>
+					<p:tab title="Extralar">
+						<h:panelGrid columns="2" cellpadding="10">
+							<p:graphicImage value="/resources/images/cim16.png" />
+							<h:outputText value="After a break of more than 15 years..." />
+						</h:panelGrid>
+					</p:tab>
+				</p:accordionPanel>
+
+			</h:form>
+		</div>
+
+	</ui:define>
+</ui:composition>

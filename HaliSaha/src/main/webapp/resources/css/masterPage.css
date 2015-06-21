@@ -61,7 +61,7 @@ span {
 /* End hide from IE-mac */
 body {
 	font: 62.5%/1.6 Arial, Helvetica, sans-serif;
-	background: url(images/bg.png) repeat-x top left #1f2331;
+	background: url(images/bg.png) repeat-x top left green;
 	text-align: center;
 	color: #33394d;
 }
@@ -128,7 +128,7 @@ ul#navBar li a:hover {
 	height: 85px;
 	width: 944px;
 	margin: 0px auto;
-	padding: 25px;
+	padding: 10px;
 	position: relative;
 	background: url(images/globe.jpg) no-repeat 85% 60%;
 	text-align: left;
@@ -194,7 +194,7 @@ h1 {
 
 #services h3 {
 	font-size: 18px;
-	color: red;
+	color: gray;
 	font-weight: normal;
 	margin: 0px;
 	padding: 0px;
