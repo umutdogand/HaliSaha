@@ -8,10 +8,12 @@
 		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
 		<property name="hibernate.connection.password">1</property>
 		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:orcl</property>
-		<property name="hibernate.connection.username">TESTADIYAMAN</property>
+		<property name="hibernate.connection.username">HALISAHA</property>
 		<property name="hibernate.hbm2ddl.auto">create</property>
 		<property name="hibernate.show_sql">true</property>
 		<property name="hibernate.format_sql">true</property>
-		<mapping class="java.pojos.Oyuncu"></mapping>
+		<mapping class="pojos.Oyuncu"></mapping>
+		<mapping class="pojos.Mevki"></mapping>
+		<mapping class="pojos.Saha"></mapping>
 	</session-factory>
 </hibernate-configuration>

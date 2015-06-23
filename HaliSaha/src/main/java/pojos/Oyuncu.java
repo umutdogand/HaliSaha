@@ -1,15 +1,11 @@
 package pojos;
 
-import java.util.ArrayList;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -21,7 +17,7 @@ public class Oyuncu {
 	private String adi;
 	private String soyadi;
 	private String oyuncuNo;
-	private ArrayList<Mevki> mevki;
+	private int mevki;
 	private int formaNo;
 	private int tip;
 	
@@ -51,7 +47,7 @@ public class Oyuncu {
 	public void setSoyadi(String soyadi) {
 		this.soyadi = soyadi;
 	}
-	@Column(name = "OYUNCU_	NO", length = 50)
+	@Column(name = "OYUNCU_NO", length = 50)
 	public String getOyuncuNo() {
 		return oyuncuNo;
 	}
@@ -59,12 +55,13 @@ public class Oyuncu {
 		this.oyuncuNo = oyuncuNo;
 	}
 	
-	@OneToMany(fetch=FetchType.EAGER)
-	@JoinColumn(name="ID")
-	public ArrayList<Mevki> getMevki() {
+//	@OneToMany(fetch=FetchType.EAGER)
+//	@JoinColumn(name="ID")
+	@Column(name = "MEVKI_ID", length = 50)
+	public int getMevki() {
 		return mevki;
 	}
-	public void setMevki(ArrayList<Mevki> mevki) {
+	public void setMevki(int mevki) {
 		this.mevki = mevki;
 	}
 	

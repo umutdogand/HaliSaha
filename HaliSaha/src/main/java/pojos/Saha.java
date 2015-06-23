@@ -7,6 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 @Entity
 @Table(name = "Saha_Tbl")
@@ -16,6 +17,8 @@ public class Saha {
 	private String mail;
 	private String adres;
 	private String telNo;
+	
+	private boolean canEdit=false;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "saha_id_seq")
@@ -60,6 +63,14 @@ public class Saha {
 
 	public void setTelNo(String telNo) {
 		this.telNo = telNo;
+	}
+	@Transient
+	public boolean isCanEdit() {
+		return canEdit;
+	}
+
+	public void setCanEdit(boolean canEdit) {
+		this.canEdit = canEdit;
 	}
 
 }
